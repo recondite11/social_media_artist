@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/resp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Responsive Navigation Bar</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Creativa</title>
+  </head>
 
-<body>
+  <body>
     <div class="navbar">
-        <div id="logo">LOGO</div>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu" id="menu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </div>
+      <div id="logo">Creativa.</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu" id="menu">
+        <a href="#">For You</a>
+        <a href="#">Explore</a>
+        <a href="#">Hire</a>
+        <a href="#">Assets</a>
+        <a href="#">Jobs</a>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="&#Xf002; Search.."
+          style="font-family: Arial, FontAwesome"
+        />
+      </div>
+      <div class="right-menu">
+        <a href="#" class="rounded-button">
+          Post your work
+        </a>
+        <a href="" class="message">
+            <i class="fa-solid fa-envelope" style="color: #858585"></i>
+        </a>
+        <a href="" class="notification">
+            <i class="fa-solid fa-bell" style="color: #858585;"></i>
+        </a>
+        <a href="" class="account">
+            <i class="fa-solid fa-circle-user" style="color: #858585; font-size: 34px;"></i>
+            <i class="fa-solid fa-angle-down" style="color: #858585; font-size: 12px; margin: 0px 4px;"></i>
+        </a>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

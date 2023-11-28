@@ -10,30 +10,32 @@ body {
 }
 
 .navbar {
-    background-color: #333;
-    padding: 15px;
+    height: 70px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    background-color: #0056b3;
 }
 
 #logo {
-    color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: 'Lobster', sans-serif;
 }
 
 .menu {
     display: flex;
-    flex-direction: row;
 }
 
 .menu a {
     text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    margin: 0 15px;
+    color: #000;
+    padding: 10px 0px;
+    margin: 0 12px;
+    font-size: 16px;
 }
 
 .menu-toggle {
@@ -49,23 +51,63 @@ body {
     margin: 3px 0;
 }
 
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background-color: #333;
-    }
+/* Style for the search bar container */
+.search-bar {
+    position: relative;
+    width: 400px; /* Adjust the width as needed */
+  }
 
-    .menu.active {
-        display: flex;
-    }
+  /* Style for the search input */
+  .search-input {
+    width: calc(100% - 40px); /* Adjust the width as needed */
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 5px;
+    background-color: #525252;
+  }
 
-    .menu-toggle {
-        display: flex;
-    }
+
+/* right menu  */
+.right-menu{
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 25px;
+    /* background-color: #0056b3; */
 }
+.right-menu a{
+    text-decoration: none;
+}
+.right-menu a i{
+    font-size: 20px;
+}
+.account{
+    display: flex;
+    align-items: center;
+}
+.account i{
+    display: flex;
+    align-items: center;
+}
+  .rounded-button {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10.6px 15px;
+    margin-right: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #525252; /* Adjust the background color as needed */
+    color: #D6D6D6; /* Adjust the text color as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Hover effect */
+  .rounded-button:hover {
+    background-color: #0056b3; /* Adjust the hover background color as needed */
+  }
