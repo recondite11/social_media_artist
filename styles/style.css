@@ -3,111 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
+/* NAVIGATION BAR  */
 .navbar {
-    height: 70px;
+    width: 100%;
+    height: 80px;
     display: flex;
-    align-items: center;
-    /* justify-content: space-evenly; */
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px 0px;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
     position: relative;
-    background-color: #0056b3;
+    background-color: #06070D;
+    transition: all 0.1s;
 }
-
-#logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Lobster', sans-serif;
+/* Left Side */
+.left-nav{
+    display: flex;
+}
+#logo{
+    margin-left: 30px;
+    /* margin-top: 5px; */
+    width: fit-content;
+}
+#logo img{
+    width: 110px;
 }
 
 .menu {
     display: flex;
+    align-items: center;
+    margin-left: 2rem;
 }
 
 .menu a {
     text-decoration: none;
-    color: #000;
+    color: white;
+    font-weight: bold;
     padding: 10px 0px;
     margin: 0 12px;
     font-size: 16px;
+    transition: all 0.2s;
+}
+.menu a:hover{
+    color: #5EB23F;
 }
 
-.menu-toggle {
-    cursor: pointer;
-    display: none;
-    flex-direction: column;
-}
-
-.menu-toggle span {
-    background-color: #fff;
-    height: 2px;
-    width: 25px;
-    margin: 3px 0;
-}
-
-/* Style for the search bar container */
-.search-bar {
-    position: relative;
-    width: 400px; /* Adjust the width as needed */
-  }
-
-  /* Style for the search input */
-  .search-input {
-    width: calc(100% - 40px); /* Adjust the width as needed */
-    padding: 10px;
-    /* border: 1px solid #ccc; */
-    border: none;
-    border-radius: 5px;
-    background-color: #525252;
-  }
-
-
-/* right menu  */
-.right-menu{
+/* Right side*/
+.right-nav{
     display: flex;
-    width: 400px;
     justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    right: 25px;
-    /* background-color: #0056b3; */
 }
-.right-menu a{
+.right-nav a{
     text-decoration: none;
 }
-.right-menu a i{
+.right-nav a i{
     font-size: 20px;
 }
-.account{
-    display: flex;
-    align-items: center;
-}
-.account i{
-    display: flex;
-    align-items: center;
-}
-  .rounded-button {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 10.6px 15px;
-    margin-right: 40px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    background-color: #525252; /* Adjust the background color as needed */
-    color: #D6D6D6; /* Adjust the text color as needed */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
 
-  /* Hover effect */
-  .rounded-button:hover {
-    background-color: #0056b3; /* Adjust the hover background color as needed */
-  }
+#login{
+    background-color: transparent;
+    border: 1px solid white;
+    margin: 0px 10px;
+    margin-left: 30px;
+    color: white;
+}
+#signup{
+    margin: 0px 10px;
+    margin-right: 30px;
+    padding: 10px 20px;
+}

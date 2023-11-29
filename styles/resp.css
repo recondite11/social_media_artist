@@ -1,20 +1,38 @@
-@media (max-width: 768px) {
-    .menu {
-        display: none;
+@media only screen and (max-width: 868px) {
+    /* NAVIGATION BAR RESPONSIVENESS */
+    .navbar{
         flex-direction: column;
-        width: 100%;
-        text-align: center;
+        align-items: flex-start;
+    }
+    .left-nav{
+        flex-direction: column;
+    }
+    .menu, .right-nav{
+        display: none;
+    }
+    #login, #signup{
+        margin: 10px;
+        margin-left: 40px;
+    }
+    .notification{
+        margin-bottom: 5px;
+    }
+    .menu-toggle{
+        display: flex;
         position: absolute;
-        top: 70px;
-        left: 0;
-        background-color: #333;
+        right: 25px;
+        top: 28px;
     }
-
-    .menu.active {
-        display: flex;
+    /*Toggle classes for responsive navigation bar */
+    .resp-nav{
+        height: 400px;
     }
-
-    .menu-toggle {
+    .resp-menu{
         display: flex;
+        flex-direction: column;
+    }
+    .resp-right-nav{
+        display: flex;
+        flex-direction: column;
     }
 }

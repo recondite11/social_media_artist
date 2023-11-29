@@ -1,4 +1,9 @@
+// Navigation bar toggler logic
 document.getElementById('mobile-menu').addEventListener('click', function () {
-    var menu = document.getElementById('menu');
-    menu.classList.toggle('active');
+    let nav= document.getElementById('nav');
+    let menu= document.getElementById("menu");
+    let rightnav= document.getElementById('right')
+    nav.classList.toggle('resp-nav')
+    menu.classList.toggle('resp-menu')
+    rightnav.classList.toggle('resp-right-nav')
 });
