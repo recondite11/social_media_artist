@@ -1,4 +1,4 @@
-// Navigation bar toggler logic
+// NAVIGATION BAR TOGGLER LOGIC
 document.getElementById('mobile-menu').addEventListener('click', function () {
     let nav= document.getElementById('nav');
     let menu= document.getElementById("menu");

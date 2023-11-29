@@ -1,4 +1,4 @@
-/* general buttons  */
+/* General Button  */
 .rounded-button {
     display: inline-block;
     font-size: 16px;
@@ -19,7 +19,7 @@
     color: aliceblue;
 }
 
-/* toggle button  */
+/* Toggle Button  */
 .menu-toggle {
     cursor: pointer;
     display: none;
