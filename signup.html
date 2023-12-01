@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/utils.css">
+  <link rel="stylesheet" href="styles/resp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signupFirstName">First Name:</label>
+                <input type="text" id="signupFirstName" name="signupFirstName" required>
+    
+                <label for="signupLastName">Last Name:</label>
+                <input type="text" id="signupLastName" name="signupLastName" required>
+    
+                <label for="signupDOB">Date of Birth:</label>
+                <input type="date" id="signupDOB" name="signupDOB" required>
+    
+                <label for="signupUserID">User ID:</label>
+                <input type="text" id="signupUserID" name="signupUserID" required>
+    
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+    
+                <button type="button" onclick="signup()">Sign Up</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -32,3 +32,16 @@
     width: 25px;
     margin: 3px 0;
 }
+/* Navbar switching */
+.active{
+    border-bottom: 2px solid #5EB23F;
+}
+/* Toggle color for like button  */
+.like-toggle{
+    color: #5EB23F;
+}
+
+/* Toggle profile overview */
+.profile-toggle{
+    display: flex;
+}

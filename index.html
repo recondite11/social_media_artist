@@ -8,10 +8,8 @@
   <link rel="stylesheet" href="styles/utils.css">
   <link rel="stylesheet" href="styles/resp.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lobster&family=Pacifico&family=Roboto&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,18 +22,19 @@
       <div class="left-nav" id="left">
         <div id="logo"><img src="img/logo.png" alt="logo"></div>
         <div class="menu" id="menu">
-          <a href="#">For You</a>
-          <a href="#">Explore</a>
-          <a href="#">Hire</a>
-          <a href="#">Assets</a>
-          <a href="#">Jobs</a>
+          <a href="index.html" class="active">For You</a>
+          <a href="explore.html" class="active">Explore</a>
+          <a href="#" class="active">Hire</a>
+          <a href="#" class="active">Assets</a>
+          <a href="#" class="active">Jobs</a>
         </div>
       </div>
       <div class="right-nav" id="right">
-        <a href="#" class="rounded-button" id="login">
+        <a href="#" class="rounded-button" id="post">Post your work</a>
+        <a href="login.html" class="rounded-button" id="login">
           Login
         </a>
-        <a href="#" class="rounded-button" id="signup">
+        <a href="signup.html" class="rounded-button" id="signup">
           Sign Up
         </a>
       </div>
@@ -47,7 +46,20 @@
     </div>
     <div id="home">
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Canvas Harmony</h4>
+          </div>
           <img src="img/post-1.webp" alt="">
         </div>
         <div class="profile-content">
@@ -57,11 +69,27 @@
               <div class="name">Olivia Thompson</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Vector Fusion</h4>
+          </div>
           <img src="img/post-2.webp" alt="">
         </div>
         <div class="profile-content">
@@ -71,11 +99,27 @@
               <div class="name">Elijah Rodriguez</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Color Palette</h4>
+          </div>
           <img src="img/post-3.webp" alt="">
         </div>
         <div class="profile-content">
@@ -85,11 +129,27 @@
               <div class="name">Mia Carter</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Typography Echo</h4>
+          </div>
           <img src="img/post-4.webp" alt="">
         </div>
         <div class="profile-content">
@@ -99,11 +159,27 @@
               <div class="name">Lucas Anderson</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Sketch Serenity</h4>
+          </div>
           <img src="img/post-5.webp" alt="">
         </div>
         <div class="profile-content">
@@ -113,11 +189,27 @@
               <div class="name">Ava Mitchell</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Layout Mosaic</h4>
+          </div>
           <img src="img/post-6.webp" alt="">
         </div>
         <div class="profile-content">
@@ -127,11 +219,27 @@
               <div class="name">Logan Turner</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Brand Whispers</h4>
+          </div>
           <img src="img/post-7.webp" alt="">
         </div>
         <div class="profile-content">
@@ -141,11 +249,27 @@
               <div class="name">Sophia Williams</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Interface Mirage</h4>
+          </div>
           <img src="img/post-8.webp" alt="">
         </div>
         <div class="profile-content">
@@ -155,11 +279,27 @@
               <div class="name">Jackson White</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Interface Mirage</h4>
+          </div>
           <img src="img/post-9.webp" alt="">
         </div>
         <div class="profile-content">
@@ -169,11 +309,27 @@
               <div class="name">Aria Wilson</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Logo Symphony</h4>
+          </div>
           <img src="img/post-10.webp" alt="">
         </div>
         <div class="profile-content">
@@ -183,11 +339,27 @@
               <div class="name">Ethan Davis</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Illustration Essence</h4>
+          </div>
           <img src="img/post-11.webp" alt="">
         </div>
         <div class="profile-content">
@@ -197,11 +369,27 @@
               <div class="name">Harper Martinez</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Pattern Melody</h4>
+          </div>
           <img src="img/post-12.webp" alt="">
         </div>
         <div class="profile-content">
@@ -211,11 +399,27 @@
               <div class="name">Noah Brown</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>UI Bliss</h4>
+          </div>
           <img src="img/post-13.webp" alt="">
         </div>
         <div class="profile-content">
@@ -225,11 +429,27 @@
               <div class="name">Grace Taylor</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Texture Harmony</h4>
+          </div>
           <img src="img/post-14.webp" alt="">
         </div>
         <div class="profile-content">
@@ -239,11 +459,27 @@
               <div class="name">Mason Harris</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Concept Rhythm</h4>
+          </div>
           <img src="img/post-15.webp" alt="">
         </div>
         <div class="profile-content">
@@ -253,11 +489,27 @@
               <div class="name">Isabella Moore</div>
             </div>
           </a>
-          <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+          <div class="likes">
+            <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
       <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+          </div>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
         <div class="post-img">
+          <div class="post-hover">
+            <h4>Style Palette</h4>
+          </div>
           <img src="img/post-16.webp" alt="">
         </div>
         <div class="profile-content">
@@ -268,208 +520,435 @@
               </div>
             </div>
           </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
+          </div>
         </div>
       </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-17.webp" alt="">
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Amelia Hall</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Form Elegance</h4>
+          </div>
+          <img src="img/post-17.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Amelia Hall</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-18.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Benjamin Murphy</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Composition Verse</h4>
+          </div>
+          <img src="img/post-18.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Benjamin Murphy</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-19.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Scarlett King</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Visual Dream</h4>
+          </div>
+          <img src="img/post-19.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Scarlett King</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-20.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Oliver Clark</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Shape Harmony</h4>
+          </div>
+          <img src="img/post-20.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Oliver Clark</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-21.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Abigail Johnson</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>White Space Echo</h4>
+          </div>
+          <img src="img/post-21.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Abigail Johnson</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-22.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Samuel Adams</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Line Serenity</h4>
+          </div>
+          <img src="img/post-22.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Samuel Adams</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-23.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Chloe Parker</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Iconic Canvas</h4>
+          </div>
+          <img src="img/post-23.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Chloe Parker</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-24.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Alexander Reed</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Minimalist Whispers</h4>
+          </div>
+          <img src="img/post-24.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Alexander Reed</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-25.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Lily Baker</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Contrast Essence</h4>
+          </div>
+          <img src="img/post-25.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Lily Baker</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-26.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Daniel Scott</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Creative Fusion</h4>
+          </div>
+          <img src="img/post-26.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Daniel Scott</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-27.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Emily Turner</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Digital Harmony</h4>
+          </div>
+          <img src="img/post-27.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Emily Turner</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-28.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">William Allen</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Print Rhythm</h4>
+          </div>
+          <img src="img/post-28.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">William Allen</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-29.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Zoey Nelson</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Ambient Palette</h4>
+          </div>
+          <img src="img/post-29.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Zoey Nelson</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
-        <div class="post">
-          <div class="post-img">
-            <img src="img/post-30.webp" alt="">
+      </div>
+      <div class="post">
+        <div class="profile-overview">
+          <div class="profile-pic">
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
           </div>
-          <div class="profile-content">
-            <a href="">
-              <div class="profile">
-                <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-                <div class="name">Henry Wright</div>
-              </div>
-            </a>
+          <div class="bio">
+            <h2 class="name">Olivia Thompson</h2>
+            <p class="location">California, US</p>
+          </div>
+          <div class="follow-btn rounded-button">Follow</div>
+        </div>
+        <div class="post-img">
+          <div class="post-hover">
+            <h4>Motion Elegance</h4>
+          </div>
+          <img src="img/post-30.webp" alt="">
+        </div>
+        <div class="profile-content">
+          <a href="">
+            <div class="profile">
+              <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+              <div class="name">Henry Wright</div>
+            </div>
+          </a>
+          <div class="likes">
             <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <span class="like-count">976</span>
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
