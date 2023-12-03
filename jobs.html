@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/resp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jobs</title>
+    <style>
+        #main {
+            padding-top: 80px;
+            height: 200vh;
+            background-color: #FAF9F6 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav" class="navbar">
+            <div class="left-nav" id="left">
+                <div id="logo"><img src="img/logo.png" alt="logo"></div>
+                <div class="menu" id="menu">
+                    <a href="index.html" id="default">For You</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="hire.html">Hire</a>
+                    <a href="jobs.html">Jobs</a>
+                </div>
+            </div>
+            <div class="right-nav" id="right">
+                <a href="#" class="rounded-button" id="post">Post your work</a>
+                <a href="" class="rounded-button" id="logout" onclick="logout()">Log Out</a>
+                <a href="login.html" class="rounded-button" id="login">
+                    Login
+                </a>
+                <a href="signup.html" class="rounded-button" id="signup">
+                    Sign Up
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="job">
+            <div class="hire-header">
+                <h1 class="heading">Creative Jobs</h1>
+                <p class="para">Discover your next career move, freelance gig, or internship</p>
+            </div>
+            <div class="job-body">
+                <div class="job-menu">
+                    <div class="job-tab active-job-tab">Freelance(200)</div>
+                    <div class="job-tab">Full-Time(180)</div>
+                </div>
+                <div class="job-cards active-job" id="freelance">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Creative Minds Studio</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Remote</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Senior UX/UI Designer for Innovative App Interface</h5>
+                            <p class="job-description">Join our team to lead the design efforts for an upcoming mobile app, focusing on creating an intuitive and visually appealing user interface.</p>
+                        </div>
+                        <div class="time">10 hours ago</div>
+                    </div>
+                
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Pixel Perfect Designs</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Remote</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Motion Graphics Specialist for Brand Animation</h5>
+                            <p class="job-description">Looking for a creative mind skilled in motion graphics to bring our brand to life through captivating animations and visual storytelling.</p>
+                        </div>
+                        <div class="time">8 hours ago</div>
+                    </div>
+                
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Innovative Spaces Design</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>City Center</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Interior Architect for Modern Office Redesign</h5>
+                            <p class="job-description">Revamp the interior of our office space, incorporating modern design elements to enhance productivity and aesthetic appeal.</p>
+                        </div>
+                        <div class="time">12 hours ago</div>
+                    </div>
+                
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">TechVision Solutions</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Virtual Office</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">UI/UX Design Lead for Cutting-Edge Software Interface</h5>
+                            <p class="job-description">Lead the design team in creating a user-friendly and visually stunning interface for our next-generation software product.</p>
+                        </div>
+                        <div class="time">6 hours ago</div>
+                    </div>
+                
+                    <!-- Card 5 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">EcoGreen Innovations</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Green Valley</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Sustainable Design Specialist for Eco-Friendly Home Projects</h5>
+                            <p class="job-description">Contribute your expertise in sustainable design to create environmentally friendly home projects that prioritize green living.</p>
+                        </div>
+                        <div class="time">9 hours ago</div>
+                    </div>
+                
+                    <!-- Card 6 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Artistic Impressions Studio</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Downtown Arts District</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Graphic Designer for Visual Brand Identity</h5>
+                            <p class="job-description">Create stunning visuals and establish a unique brand identity through your artistic skills and design expertise.</p>
+                        </div>
+                        <div class="time">11 hours ago</div>
+                    </div>
+                
+                    <!-- Card 7 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Futuristic Interiors</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Metropolis City</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">3D Rendering Specialist for Futuristic Office Spaces</h5>
+                            <p class="job-description">Bring innovation to life by creating realistic 3D renderings of futuristic office spaces that inspire creativity and productivity.</p>
+                        </div>
+                        <div class="time">7 hours ago</div>
+                    </div>
+                
+                    <!-- Card 8 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Digital Trends Agency</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Virtual Office</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Web Designer for Trendsetting E-Commerce Platforms</h5>
+                            <p class="job-description">Design cutting-edge and visually appealing e-commerce websites that align with the latest digital trends and user expectations.</p>
+                        </div>
+                        <div class="time">10 hours ago</div>
+                    </div>
+                
+                    <!-- Card 9 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Luxury Living Designs</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Elite Suburbia</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">High-End Residential Interior Designer</h5>
+                            <p class="job-description">Craft luxurious and sophisticated interior designs for high-end residences, creating spaces that exude elegance and comfort.</p>
+                        </div>
+                        <div class="time">8 hours ago</div>
+                    </div>
+                
+                    <!-- Card 10 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">ModernTech Innovations</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Tech Hub</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Product Design Engineer for Futuristic Gadgets</h5>
+                            <p class="job-description">Contribute to the future of technology by designing innovative and sleek product prototypes for cutting-edge gadgets.</p>
+                        </div>
+                        <div class="time">12 hours ago</div>
+                    </div>
+                
+                    <!-- Card 11 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Urban Spaces Planning</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>City Center</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Urban Planner for Smart City Development</h5>
+                            <p class="job-description">Play a key role in shaping the future of urban environments by planning and designing smart city layouts and infrastructure.</p>
+                        </div>
+                        <div class="time">6 hours ago</div>
+                    </div>
+                
+                    <!-- Card 12 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Creative Spaces Collaborative</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Collaboration Hub</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Collaborative Workspace Designer</h5>
+                            <p class="job-description">Design innovative and flexible collaborative workspaces that foster creativity, teamwork, and a sense of community.</p>
+                        </div>
+                        <div class="time">9 hours ago</div>
+                    </div>
+                
+                    <!-- Card 13 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Outdoor Escapes Design</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Nature Retreat</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Landscape Architect for Tranquil Outdoor Spaces</h5>
+                            <p class="job-description">Transform outdoor spaces into serene retreats by designing landscapes that harmonize with nature and provide tranquility.</p>
+                        </div>
+                        <div class="time">11 hours ago</div>
+                    </div>
+                
+                    <!-- Card 14 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">TechSavvy Solutions</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Digital District</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Virtual Reality Experience Designer</h5>
+                            <p class="job-description">Craft immersive virtual reality experiences that engage users and push the boundaries of interactive storytelling and technology.</p>
+                        </div>
+                        <div class="time">7 hours ago</div>
+                    </div>
+                
+                    <!-- Card 15 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Global Innovators Hub</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Worldwide</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Virtual Reality UX Designer for Immersive Experiences</h5>
+                            <p class="job-description">Shape the future of virtual reality by designing immersive and user-friendly experiences that push the boundaries of technology.</p>
+                        </div>
+                        <div class="time">7 hours ago</div>
+                    </div>
+                </div>
+                
+                <div class="job-cards" id="fulltime">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Global Innovations Corp</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Worldwide</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Senior Product Designer for Cutting-Edge Tech</h5>
+                            <p class="job-description">Join our dynamic team to lead the design of innovative products that will shape the future of technology.</p>
+                        </div>
+                        <div class="time">12 hours ago</div>
+                    </div>
+                
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Innovate Designs Inc</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Global Headquarters</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">UX/UI Architect for Enterprise Solutions</h5>
+                            <p class="job-description">Seeking an experienced professional to architect and design user experiences for our enterprise-level software solutions.</p>
+                        </div>
+                        <div class="time">10 hours ago</div>
+                    </div>
+                
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Tech Visionaries Ltd</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Tech Hub</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Lead Graphic Designer for Brand Enhancement</h5>
+                            <p class="job-description">Take the lead in enhancing our brand through creative graphic design, ensuring a consistent and visually appealing brand identity.</p>
+                        </div>
+                        <div class="time">8 hours ago</div>
+                    </div>
+                
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Innovative Solutions Co</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>City Center</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Senior Interior Architect for Urban Spaces</h5>
+                            <p class="job-description">Play a key role in designing urban spaces that are not only aesthetically pleasing but also contribute to the overall well-being of the community.</p>
+                        </div>
+                        <div class="time">11 hours ago</div>
+                    </div>
+                
+                    <!-- Card 5 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">FutureTech Innovations</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Futuristic District</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">UI/UX Design Lead for Virtual Reality Experiences</h5>
+                            <p class="job-description">Lead the design efforts in creating immersive and user-friendly virtual reality experiences that redefine digital interaction.</p>
+                        </div>
+                        <div class="time">9 hours ago</div>
+                    </div>
+                
+                    <!-- Card 6 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Design Excellence Group</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Design Hub</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Motion Graphics Specialist for Dynamic Ad Campaigns</h5>
+                            <p class="job-description">Create visually stunning motion graphics for our advertising campaigns, bringing creativity and dynamism to our brand.</p>
+                        </div>
+                        <div class="time">10 hours ago</div>
+                    </div>
+                
+                    <!-- Card 7 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Creative Spaces Collaborative</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Collaboration Center</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Collaborative Workspace Designer</h5>
+                            <p class="job-description">Design innovative and flexible collaborative workspaces that foster creativity, teamwork, and a sense of community.</p>
+                        </div>
+                        <div class="time">8 hours ago</div>
+                    </div>
+                
+                    <!-- Card 8 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Outdoor Escapes Design</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Nature Retreats</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Landscape Architect for Tranquil Outdoor Spaces</h5>
+                            <p class="job-description">Transform outdoor spaces into serene retreats by designing landscapes that harmonize with nature and provide tranquility.</p>
+                        </div>
+                        <div class="time">11 hours ago</div>
+                    </div>
+                
+                    <!-- Card 9 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">TechSavvy Solutions</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Digital District</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Virtual Reality Experience Designer</h5>
+                            <p class="job-description">Craft immersive virtual reality experiences that engage users and push the boundaries of interactive storytelling and technology.</p>
+                        </div>
+                        <div class="time">7 hours ago</div>
+                    </div>
+                
+                    <!-- Card 10 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Global Innovators Hub</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Worldwide</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Virtual Reality UX Designer for Immersive Experiences</h5>
+                            <p class="job-description">Shape the future of virtual reality by designing immersive and user-friendly experiences that push the boundaries of technology.</p>
+                        </div>
+                        <div class="time">7 hours ago</div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Luxury Living Designs</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Elite Suburbia</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">High-End Residential Interior Designer</h5>
+                            <p class="job-description">Craft luxurious and sophisticated interior designs for high-end residences, creating spaces that exude elegance and comfort.</p>
+                        </div>
+                        <div class="time">8 hours ago</div>
+                    </div>
+                
+                    <!-- Card 10 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">ModernTech Innovations</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Tech Hub</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Product Design Engineer for Futuristic Gadgets</h5>
+                            <p class="job-description">Contribute to the future of technology by designing innovative and sleek product prototypes for cutting-edge gadgets.</p>
+                        </div>
+                        <div class="time">12 hours ago</div>
+                    </div>
+                
+                    <!-- Card 11 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Urban Spaces Planning</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>City Center</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Urban Planner for Smart City Development</h5>
+                            <p class="job-description">Play a key role in shaping the future of urban environments by planning and designing smart city layouts and infrastructure.</p>
+                        </div>
+                        <div class="time">6 hours ago</div>
+                    </div>
+                
+                    <!-- Card 12 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Creative Spaces Collaborative</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Collaboration Hub</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Collaborative Workspace Designer</h5>
+                            <p class="job-description">Design innovative and flexible collaborative workspaces that foster creativity, teamwork, and a sense of community.</p>
+                        </div>
+                        <div class="time">9 hours ago</div>
+                    </div>
+                
+                    <!-- Card 13 -->
+                    <div class="card">
+                        <div class="about-company">
+                            <h6 class="company-name">Outdoor Escapes Design</h6>
+                            <p class="company-location"><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>Nature Retreat</p>
+                        </div>
+                        <div class="about-job">
+                            <h5 class="job-title">Landscape Architect for Tranquil Outdoor Spaces</h5>
+                            <p class="job-description">Transform outdoor spaces into serene retreats by designing landscapes that harmonize with nature and provide tranquility.</p>
+                        </div>
+                        <div class="time">11 hours ago</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

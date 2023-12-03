@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/resp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hire</title>
+    <style>
+        #main{
+            background-color :#FAF9F6 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="nav" class="navbar">
+            <div class="left-nav" id="left">
+                <div id="logo"><img src="img/logo.png" alt="logo"></div>
+                <div class="menu" id="menu">
+                    <a href="index.html" id="default">For You</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="hire.html">Hire</a>
+                    <a href="jobs.html">Jobs</a>
+                </div>
+            </div>
+            <div class="right-nav" id="right">
+                <a href="#" class="rounded-button" id="post">Post your work</a>
+                <a href="" class="rounded-button" id="logout" onclick="logout()">Log Out</a>
+                <a href="login.html" class="rounded-button" id="login">
+                    Login
+                </a>
+                <a href="signup.html" class="rounded-button" id="signup">
+                    Sign Up
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="hire">
+            <div class="hire-header">
+                <h1 class="heading">Hire Freelance Designers</h1>
+                <p class="para">Find the perfect freelancer for your next project</p>
+                <div class="hire-banners">
+                    <div class="banner"><i class="fa-brands fa-edge"></i><p>Browse, search, and filter over 1 million qualified creators available now</p></div>
+                    <div class="banner"><i class="fa-solid fa-message"></i><p>Start conversations, share files, and join video calls with candidates</p></div>
+                    <div class="banner"><i class="fa-solid fa-money-check-dollar"></i><p>Pay seamlessly and securely with a debit or credit card on Behance</p></div>
+                </div>
+            </div>
+            <div class="hire-body">
+                <div class="hire-category">
+                    <h2>Browse Categories:</h2>
+                    <span class="categories">
+                    <button class="active-btn rounded-button category-switch">Digital Artists</button>
+                    <button class="rounded-button category-switch">Graphic Designers</button>
+                    <button class="rounded-button category-switch">Photographers</button>
+                    <button class="rounded-button category-switch">UI/UX Designers</button>
+                    </span>
+                </div>
+                <div class="hire-profiles active-profile" id="digital-artist">
+                    <!-- Profile 1 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-1.webp" alt=""></div>
+                            <div class="name"><h1>John Doe</h1></div>
+                            <div class="location"><p>New York, US</p></div>
+                            <div class="role">Digital Artist</div>
+                        </div>
+                        <button class="hire-btn">Hire John</button>
+                    </div>
+                
+                    <!-- Profile 2 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-2.webp" alt=""></div>
+                            <div class="name"><h1>Jane Smith</h1></div>
+                            <div class="location"><p>Los Angeles, US</p></div>
+                            <div class="role">Digital Artist</div>
+                        </div>
+                        <button class="hire-btn">Hire Jane</button>
+                    </div>
+                
+                    <!-- Profile 3 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-3.webp" alt=""></div>
+                            <div class="name"><h1>Alice Johnson</h1></div>
+                            <div class="location"><p>London, UK</p></div>
+                            <div class="role">Digital Artist</div>
+                        </div>
+                        <button class="hire-btn">Hire Alice</button>
+                    </div>
+                
+                    <!-- Profile 4 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-4.webp" alt=""></div>
+                            <div class="name"><h1>Michael Brown</h1></div>
+                            <div class="location"><p>Sydney, Australia</p></div>
+                            <div class="role">Digital Artist</div>
+                        </div>
+                        <button class="hire-btn">Hire Michael</button>
+                    </div>
+                
+                    <!-- Profile 5 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-5.webp" alt=""></div>
+                            <div class="name"><h1>Sarah Williams</h1></div>
+                            <div class="location"><p>Tokyo, Japan</p></div>
+                            <div class="role">Digital Artist</div>
+                        </div>
+                        <button class="hire-btn">Hire Sarah</button>
+                    </div>
+                
+                    <!-- Profile 6 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-6.webp" alt=""></div>
+                            <div class="name"><h1>Daniel Miller</h1></div>
+                            <div class="location"><p>Berlin, Germany</p></div>
+                            <div class="role">Digital Artist</div>
+                        </div>
+                        <button class="hire-btn">Hire Daniel</button>
+                    </div>
+                
+                    <!-- Profile 7 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-7.webp" alt=""></div>
+                            <div class="name"><h1>Emily Davis</h1></div>
+                            <div class="location"><p>Paris, France</p></div>
+                            <div class="role">Digital Artist</div>
+                        </div>
+                        <button class="hire-btn">Hire Emily</button>
+                    </div>
+                
+                    <!-- Profile 8 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-8.webp" alt=""></div>
+                            <div class="name"><h1>Christopher Lee</h1></div>
+                            <div class="location"><p>Toronto, Canada</p></div>
+                            <div class="role">Digital Artist</div>
+                        </div>
+                        <button class="hire-btn">Hire Christopher</button>
+                    </div>
+                
+                    <!-- Profile 9 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-9.webp" alt=""></div>
+                            <div class="name"><h1>Grace Taylor</h1></div>
+                            <div class="location"><p>Mexico City, Mexico</p></div>
+                            <div class="role">Digital Artist</div>
+                        </div>
+                        <button class="hire-btn">Hire Grace</button>
+                    </div>
+                </div>
+                
+                <div class="hire-profiles" id="graphic-designer">
+                    <!-- Profile 10 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-10.webp" alt=""></div>
+                            <div class="name"><h1>Alex Turner</h1></div>
+                            <div class="location"><p>San Francisco, US</p></div>
+                            <div class="role">Graphic Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Alex</button>
+                    </div>
+                
+                    <!-- Profile 11 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-11.webp" alt=""></div>
+                            <div class="name"><h1>Eva Rodriguez</h1></div>
+                            <div class="location"><p>Miami, US</p></div>
+                            <div class="role">Graphic Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Eva</button>
+                    </div>
+                
+                    <!-- Profile 12 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-12.webp" alt=""></div>
+                            <div class="name"><h1>Liam Patel</h1></div>
+                            <div class="location"><p>Manchester, UK</p></div>
+                            <div class="role">Graphic Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Liam</button>
+                    </div>
+                
+                    <!-- Profile 13 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-13.webp" alt=""></div>
+                            <div class="name"><h1>Mia Chen</h1></div>
+                            <div class="location"><p>Shanghai, China</p></div>
+                            <div class="role">Graphic Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Mia</button>
+                    </div>
+                
+                    <!-- Profile 14 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-14.webp" alt=""></div>
+                            <div class="name"><h1>Sebastian Morales</h1></div>
+                            <div class="location"><p>Bogota, Colombia</p></div>
+                            <div class="role">Graphic Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Sebastian</button>
+                    </div>
+                
+                    <!-- Profile 15 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-15.webp" alt=""></div>
+                            <div class="name"><h1>Luna Kim</h1></div>
+                            <div class="location"><p>Seoul, South Korea</p></div>
+                            <div class="role">Graphic Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Luna</button>
+                    </div>
+                
+                    <!-- Profile 16 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-16.webp" alt=""></div>
+                            <div class="name"><h1>Nathan Wright</h1></div>
+                            <div class="location"><p>Toronto, Canada</p></div>
+                            <div class="role">Graphic Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Nathan</button>
+                    </div>
+                
+                    <!-- Profile 17 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-17.webp" alt=""></div>
+                            <div class="name"><h1>Isabella Martinez</h1></div>
+                            <div class="location"><p>Mexico City, Mexico</p></div>
+                            <div class="role">Graphic Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Isabella</button>
+                    </div>
+                
+                    <!-- Profile 18 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-18.webp" alt=""></div>
+                            <div class="name"><h1>Omar Ahmed</h1></div>
+                            <div class="location"><p>Cairo, Egypt</p></div>
+                            <div class="role">Graphic Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Omar</button>
+                    </div>
+                </div>
+                <div class="hire-profiles" id="photographer">
+                    <!-- Profile 1 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-18.webp" alt=""></div>
+                            <div class="name"><h1>Alice Thompson</h1></div>
+                            <div class="location"><p>Paris, France</p></div>
+                            <div class="role">Photographer</div>
+                        </div>
+                        <button class="hire-btn">Hire Alice</button>
+                    </div>
+                
+                    <!-- Profile 2 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-19.webp" alt=""></div>
+                            <div class="name"><h1>David Williams</h1></div>
+                            <div class="location"><p>Tokyo, Japan</p></div>
+                            <div class="role">Photographer</div>
+                        </div>
+                        <button class="hire-btn">Hire David</button>
+                    </div>
+                
+                    <!-- Profile 3 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-20.webp" alt=""></div>
+                            <div class="name"><h1>Emily Rodriguez</h1></div>
+                            <div class="location"><p>New York, US</p></div>
+                            <div class="role">Photographer</div>
+                        </div>
+                        <button class="hire-btn">Hire Emily</button>
+                    </div>
+                
+                    <!-- Profile 4 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-21.webp" alt=""></div>
+                            <div class="name"><h1>Michael Davis</h1></div>
+                            <div class="location"><p>London, UK</p></div>
+                            <div class="role">Photographer</div>
+                        </div>
+                        <button class="hire-btn">Hire Michael</button>
+                    </div>
+                
+                    <!-- Profile 5 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-22.webp" alt=""></div>
+                            <div class="name"><h1>Sophie Lee</h1></div>
+                            <div class="location"><p>Sydney, Australia</p></div>
+                            <div class="role">Photographer</div>
+                        </div>
+                        <button class="hire-btn">Hire Sophie</button>
+                    </div>
+                
+                    <!-- Profile 6 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-23.webp" alt=""></div>
+                            <div class="name"><h1>Nathan Miller</h1></div>
+                            <div class="location"><p>Toronto, Canada</p></div>
+                            <div class="role">Photographer</div>
+                        </div>
+                        <button class="hire-btn">Hire Nathan</button>
+                    </div>
+                
+                    <!-- Profile 7 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-24.webp" alt=""></div>
+                            <div class="name"><h1>Olivia Brown</h1></div>
+                            <div class="location"><p>Berlin, Germany</p></div>
+                            <div class="role">Photographer</div>
+                        </div>
+                        <button class="hire-btn">Hire Olivia</button>
+                    </div>
+                
+                    <!-- Profile 8 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-25.webp" alt=""></div>
+                            <div class="name"><h1>Benjamin Wright</h1></div>
+                            <div class="location"><p>Mexico City, Mexico</p></div>
+                            <div class="role">Photographer</div>
+                        </div>
+                        <button class="hire-btn">Hire Benjamin</button>
+                    </div>
+                
+                    <!-- Profile 9 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-26.webp" alt=""></div>
+                            <div class="name"><h1>Lily Chen</h1></div>
+                            <div class="location"><p>Shanghai, China</p></div>
+                            <div class="role">Photographer</div>
+                        </div>
+                        <button class="hire-btn">Hire Lily</button>
+                    </div>
+                </div>
+                <div class="hire-profiles" id="ui">
+                    <!-- Profile 1 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-27.webp" alt=""></div>
+                            <div class="name"><h1>Sophie Davis</h1></div>
+                            <div class="location"><p>San Francisco, US</p></div>
+                            <div class="role">UI/UX Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Sophie</button>
+                    </div>
+                
+                    <!-- Profile 2 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-28.webp" alt=""></div>
+                            <div class="name"><h1>Michael Johnson</h1></div>
+                            <div class="location"><p>Seattle, US</p></div>
+                            <div class="role">UI/UX Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Michael</button>
+                    </div>
+                
+                    <!-- Profile 3 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-29.webp" alt=""></div>
+                            <div class="name"><h1>Emily White</h1></div>
+                            <div class="location"><p>London, UK</p></div>
+                            <div class="role">UI/UX Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Emily</button>
+                    </div>
+                
+                    <!-- Profile 4 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-30.webp" alt=""></div>
+                            <div class="name"><h1>David Miller</h1></div>
+                            <div class="location"><p>Tokyo, Japan</p></div>
+                            <div class="role">UI/UX Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire David</button>
+                    </div>
+                
+                    <!-- Profile 5 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-31.webp" alt=""></div>
+                            <div class="name"><h1>Lily Chen</h1></div>
+                            <div class="location"><p>Shanghai, China</p></div>
+                            <div class="role">UI/UX Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Lily</button>
+                    </div>
+                
+                    <!-- Profile 6 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-32.webp" alt=""></div>
+                            <div class="name"><h1>Benjamin Wright</h1></div>
+                            <div class="location"><p>Mexico City, Mexico</p></div>
+                            <div class="role">UI/UX Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Benjamin</button>
+                    </div>
+                
+                    <!-- Profile 7 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-33.webp" alt=""></div>
+                            <div class="name"><h1>Olivia Brown</h1></div>
+                            <div class="location"><p>Berlin, Germany</p></div>
+                            <div class="role">UI/UX Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Olivia</button>
+                    </div>
+                
+                    <!-- Profile 8 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-34.webp" alt=""></div>
+                            <div class="name"><h1>Nathan Miller</h1></div>
+                            <div class="location"><p>Toronto, Canada</p></div>
+                            <div class="role">UI/UX Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Nathan</button>
+                    </div>
+                
+                    <!-- Profile 9 -->
+                    <div class="hire-profile">
+                        <div class="cover"></div>
+                        <div class="bio">
+                            <div class="profile-pic"><img src="img/profile-35.webp" alt=""></div>
+                            <div class="name"><h1>Sophia Lee</h1></div>
+                            <div class="location"><p>Sydney, Australia</p></div>
+                            <div class="role">UI/UX Designer</div>
+                        </div>
+                        <button class="hire-btn">Hire Sophia</button>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

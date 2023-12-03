@@ -7,6 +7,7 @@
     padding: 9px 20px;
     text-align: center;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
     background-color: #5EB23F; /* Adjust the background color as needed */
     color: #000; /* Adjust the text color as needed */
@@ -44,4 +45,28 @@
 /* Toggle profile overview */
 .profile-toggle{
     display: flex;
+}
+/* Explore tab toggle  */
+.active-tab .category-name{
+    background-color: #5EB23F;
+}
+.active-card{
+    display: flex;
+}
+
+/* Hire profile change  */
+.active-profile{
+    display: flex;
+}
+.active-btn{
+    background-color: #525252 !important;
+    color: #ffffff;
+}
+
+/* Job profile change  */
+.active-job{
+    display: flex;
+}
+.active-job-tab{
+    border-bottom: 1px solid #000;
 }
